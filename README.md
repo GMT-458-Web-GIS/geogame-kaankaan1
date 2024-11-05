@@ -1,4 +1,4 @@
-# Geo-Game Design Documentation
+# Geo-Game Design 
 
 **Objective**: This geo-game demonstrates the distortions that arise when representing Earth's geoid shape on a flat map. The purpose is to illustrate that distances on a flat map can appear misleading compared to real-world distances on Earth's curved surface. For instance, the distance across Africa might appear the same as across Russia on a map, even though the actual distances differ. This concept challenges the player to estimate and understand such discrepancies.
 
