@@ -2,9 +2,11 @@
 
 ## Objective
 
-This geo-game demonstrates the distortions that arise when representing Earth's geoid shape on a flat map. The purpose is to illustrate how distances can be visually misleading on a flat map compared to their real-world measurements on Earth's curved surface. For instance, a line that looks longer on a map may, in reality, be shorter due to map projection distortions. 
+This geo-game demonstrates the distortions that arise when representing Earth's geoid shape on a flat map. The purpose is to illustrate how distances can be visually misleading on a flat map compared to their real-world measurements on Earth's curved surface.
 
 The game challenges players to estimate and understand such discrepancies by visually comparing two lines of different lengths and guessing which is longer.
+
+Your goal is to achieve the highest number of correct answers while avoiding three mistakes. The game ends when you make three incorrect guesses.
 
 ---
 
@@ -13,7 +15,8 @@ The game challenges players to estimate and understand such discrepancies by vis
 - **Random Lines**: Two lines (one red and one blue) are drawn randomly across the map. Their true lengths are calculated based on geographic coordinates.
 - **Player Guess**: Players choose which line they believe is longer based on visual appearance.
 - **Feedback**: After each guess, the actual lengths of both lines are revealed, and feedback indicates whether the guess was correct or incorrect.
-- **Counters**: A correct/incorrect counter updates after every round. The game ends when the player accumulates 3 incorrect guesses, and a message appears on the screen.
+- **Counters**: A correct/incorrect counter updates after every round. 
+- **Game End Condition**: The game ends when the player accumulates three incorrect guesses. A message appears summarizing their performance and the number of correct answers achieved.
 
 ---
 
@@ -22,7 +25,7 @@ The game challenges players to estimate and understand such discrepancies by vis
 ### 1. **Game Logic**
 This visual demonstrates the core concept of the game: the stick that looks longer may turn out to be shorter due to map projection distortions.
 
- ![Screenshot_4](https://github.com/user-attachments/assets/1ac08e6c-d90f-47ca-81b6-e036e05631e3)
+ ![Screenshot_4](https://github.com/user-attachments/assets/2b1a5d98-34df-46db-8a1d-c0ad6317f3a5)
 
 
 ---
@@ -30,15 +33,16 @@ This visual demonstrates the core concept of the game: the stick that looks long
 ### 2. **Incorrect Answer Feedback**
 When a player guesses incorrectly, the game provides feedback showing the correct answer and the actual lengths of both lines.
 
- ![Screenshot_5](https://github.com/user-attachments/assets/b95fe316-52ce-4ba1-9ecc-3b688206a805)
+ ![Screenshot_5](https://github.com/user-attachments/assets/c28917ba-fad1-499a-8e59-be314c415d86)
 
 
 ---
 
 ### 3. **Correct/Incorrect Counter**
-The game keeps track of correct and incorrect answers. Once 3 incorrect answers are reached, the game ends, and a message appears.
+The game keeps track of correct and incorrect answers. Once three incorrect guesses are reached, the game ends, and a message appears.
 
- ![Screenshot_6](https://github.com/user-attachments/assets/f3b37dab-4fa1-42dc-abe8-30e82b7a0052)
+ ![Screenshot_6](https://github.com/user-attachments/assets/aa44e554-4521-4482-aead-6d333b150e63)
+
 
 ---
 
@@ -49,7 +53,7 @@ The game keeps track of correct and incorrect answers. Once 3 incorrect answers 
 - **Player Interaction**: Provide buttons to let players guess which line is longer.
 - **Feedback Display**: Show whether the player's guess was correct or incorrect, along with the actual lengths of the lines.
 - **Counters**: Track and display correct and incorrect answers on the screen.
-- **Game End Condition**: End the game and display a message when the player accumulates 3 incorrect guesses.
+- **Game End Condition**: End the game and display a message when the player accumulates three incorrect guesses.
 
 ### 2. **Layout**
 - **Map Canvas**: Centrally placed and occupies most of the screen for optimal visibility.
@@ -69,11 +73,10 @@ This game uses **Leaflet.js**, an open-source JavaScript library for interactive
 
 1. Open the project directory and launch the `index.html` file in any modern web browser.
 2. Interact with the map to play the game. The game auto-refreshes after each guess, resetting with new lines.
-3. The game ends after 3 incorrect guesses, and a message appears summarizing the player's performance.
+3. The game ends after three incorrect guesses, and a message appears summarizing the player's performance and total correct answers.
 
 ---
 
 ## Educational Value
 
 This game is an engaging way to explore geographical distortions caused by map projections. By visually comparing line lengths, players develop an intuitive understanding of how Earth's curvature impacts distance representation.
-
