@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Length Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="active">Game</a>
+        <a href="about.html">About</a>
+    </div>
+    
+    <div id="gameContainer">
+        <h1>Guess the Line Length</h1>
+        <div id="mapCanvas"></div>
+        <div id="guessOptions">
+            <button onclick="makeGuess('blue')">Blue line is longer</button>
+            <button onclick="makeGuess('red')">Red line is longer</button>
+        </div>
+        <p id="result"></p>
+        <div id="counters">
+            <p>Correct Answers: <span id="correctCount">0</span></p>
+            <p>Wrong Answers: <span id="wrongCount">0</span></p>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
