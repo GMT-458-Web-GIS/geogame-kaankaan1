@@ -22,24 +22,23 @@ The game challenges players to estimate and understand such discrepancies by vis
 ### 1. **Game Logic**
 This visual demonstrates the core concept of the game: the stick that looks longer may turn out to be shorter due to map projection distortions.
 
-![Game Logic](link-![Screenshot_4](https://github.com/user-attachments/assets/7215fac5-ba56-42f8-b290-875f414ae577)
-to-visual-1)
+[Screenshot_4](https://github.com/user-attachments/assets/7215fac5-ba56-42f8-b290-875f414ae577)
+
 
 ---
 
 ### 2. **Incorrect Answer Feedback**
 When a player guesses incorrectly, the game provides feedback showing the correct answer and the actual lengths of both lines.
 
-![Incorrect Answer Feedback](link-to-![Screenshot_5](https://github.com/user-attachments/assets/ec968043-4a4b-4d64-ba52-3fe044242087)
-visual-2)
+[Screenshot_5](https://github.com/user-attachments/assets/ec968043-4a4b-4d64-ba52-3fe044242087)
+ 
 
 ---
 
 ### 3. **Correct/Incorrect Counter**
 The game keeps track of correct and incorrect answers. Once 3 incorrect answers are reached, the game ends, and a message appears.
 
-![Correct/Incorrect Counter](link-to![Screenshot_6](https://github.com/user-attachments/assets/e83f1599-0003-473b-97a8-262eda9da369)
--visual-3)
+[Screenshot_6](https://github.com/user-attachments/assets/e83f1599-0003-473b-97a8-262eda9da369)
 
 ---
 
