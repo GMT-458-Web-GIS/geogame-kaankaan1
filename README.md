@@ -69,14 +69,6 @@ This game uses **Leaflet.js**, an open-source JavaScript library for interactive
 
 ---
 
-## How to Run the Game
-
-1. Open the project directory and launch the `index.html` file in any modern web browser.
-2. Interact with the map to play the game. The game auto-refreshes after each guess, resetting with new lines.
-3. The game ends after three incorrect guesses, and a message appears summarizing the player's performance and total correct answers.
-
----
-
 ## Educational Value
 
 This game is an engaging way to explore geographical distortions caused by map projections. By visually comparing line lengths, players develop an intuitive understanding of how Earth's curvature impacts distance representation.
