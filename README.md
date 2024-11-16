@@ -1,31 +1,80 @@
-# Geo-Game Design 
+# Geo-Game Design
 
-**Objective**: This geo-game demonstrates the distortions that arise when representing Earth's geoid shape on a flat map. The purpose is to illustrate that distances on a flat map can appear misleading compared to real-world distances on Earth's curved surface. For instance, the distance across Africa might appear the same as across Russia on a map, even though the actual distances differ. This concept challenges the player to estimate and understand such discrepancies.
+## Objective
+
+This geo-game demonstrates the distortions that arise when representing Earth's geoid shape on a flat map. The purpose is to illustrate how distances can be visually misleading on a flat map compared to their real-world measurements on Earth's curved surface. For instance, a line that looks longer on a map may, in reality, be shorter due to map projection distortions. 
+
+The game challenges players to estimate and understand such discrepancies by visually comparing two lines of different lengths and guessing which is longer.
 
 ---
 
-## Design of the Geo-Game
+## Game Mechanics
 
-![9c18eabd-0cfa-4595-8a04-417f0a9c5472](https://github.com/user-attachments/assets/c0825a42-acf2-4dc5-bb4e-f980ffd2c454)
+- **Random Lines**: Two lines (one red and one blue) are drawn randomly across the map. Their true lengths are calculated based on geographic coordinates.
+- **Player Guess**: Players choose which line they believe is longer based on visual appearance.
+- **Feedback**: After each guess, the actual lengths of both lines are revealed, and feedback indicates whether the guess was correct or incorrect.
+- **Counters**: A correct/incorrect counter updates after every round. The game ends when the player accumulates 3 incorrect guesses, and a message appears on the screen.
 
+---
 
-### Requirements
+## Visuals
 
-#### 1. Frontend Requirements
-- Display a map with two lines of different lengths, drawn randomly across various locations.
-- Allow players to guess which line is longer based on visual appearance.
-- After each guess, reveal the actual lengths of each line and show feedback on whether the choice was correct or not.
-- Maintain counters for correct and incorrect guesses.
-- Include flashing feedback for correct answers in green and incorrect answers in red.
-- The game auto-refreshes after each answer, resetting with new lines.
+### 1. **Game Logic**
+This visual demonstrates the core concept of the game: the stick that looks longer may turn out to be shorter due to map projection distortions.
 
-#### 2. Layout of Frontend
-- **Map Canvas**: Located centrally and taking up most of the game screen.
-- **Guess Buttons**: Below the map, with options to select which line (Red or Blue) the player believes to be longer.
-- **Feedback Section**: Appears immediately after guessing, displaying the correct answer and actual distances.
-- **Counter Display**: Fixed in the top-right corner, tracking correct and incorrect answers.
+![Game Logic](link-![Screenshot_4](https://github.com/user-attachments/assets/7215fac5-ba56-42f8-b290-875f414ae577)
+to-visual-1)
 
-#### 3. JavaScript Library Selection
-- I use **Leaflet** for this game. Leaflet is ideal for displaying interactive maps and works efficiently with OpenStreetMap, providing an engaging experience for players as they make geographic estimations.
+---
 
- 
+### 2. **Incorrect Answer Feedback**
+When a player guesses incorrectly, the game provides feedback showing the correct answer and the actual lengths of both lines.
+
+![Incorrect Answer Feedback](link-to-![Screenshot_5](https://github.com/user-attachments/assets/ec968043-4a4b-4d64-ba52-3fe044242087)
+visual-2)
+
+---
+
+### 3. **Correct/Incorrect Counter**
+The game keeps track of correct and incorrect answers. Once 3 incorrect answers are reached, the game ends, and a message appears.
+
+![Correct/Incorrect Counter](link-to![Screenshot_6](https://github.com/user-attachments/assets/e83f1599-0003-473b-97a8-262eda9da369)
+-visual-3)
+
+---
+
+## Requirements
+
+### 1. **Frontend Requirements**
+- **Interactive Map**: Display a world map where two lines (red and blue) are drawn randomly.
+- **Player Interaction**: Provide buttons to let players guess which line is longer.
+- **Feedback Display**: Show whether the player's guess was correct or incorrect, along with the actual lengths of the lines.
+- **Counters**: Track and display correct and incorrect answers on the screen.
+- **Game End Condition**: End the game and display a message when the player accumulates 3 incorrect guesses.
+
+### 2. **Layout**
+- **Map Canvas**: Centrally placed and occupies most of the screen for optimal visibility.
+- **Guess Buttons**: Positioned below the map, enabling easy interaction.
+- **Feedback Section**: Displays the results of the player's guess and provides actual line lengths.
+- **Counter Display**: Fixed at the top-right corner, always visible, and unobtrusive.
+
+---
+
+## JavaScript Library Selection
+
+This game uses **Leaflet.js**, an open-source JavaScript library for interactive maps. Leaflet integrates well with OpenStreetMap and provides a lightweight, responsive, and user-friendly experience suitable for this game's requirements.
+
+---
+
+## How to Run the Game
+
+1. Open the project directory and launch the `index.html` file in any modern web browser.
+2. Interact with the map to play the game. The game auto-refreshes after each guess, resetting with new lines.
+3. The game ends after 3 incorrect guesses, and a message appears summarizing the player's performance.
+
+---
+
+## Educational Value
+
+This game is an engaging way to explore geographical distortions caused by map projections. By visually comparing line lengths, players develop an intuitive understanding of how Earth's curvature impacts distance representation.
+
