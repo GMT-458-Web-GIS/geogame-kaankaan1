@@ -51,7 +51,7 @@ body {
 }
 
 #mapCanvas {
-  height: 600px;  /* Increased height to make the map bigger */
+  height: 500px;  /* Increased height to make the map bigger */
   width: 100%;    /* Full width to take up the available space */
   border: 2px solid #fff;  /* Optional: adds a white border to frame the map */
   border-radius: 10px;  /* Optional: adds rounded corners to the map */
