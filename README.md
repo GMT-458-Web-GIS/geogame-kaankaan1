@@ -47,6 +47,30 @@ The game keeps track of correct and incorrect answers. Once three incorrect gues
 
  ![Screenshot_6](https://github.com/user-attachments/assets/aa44e554-4521-4482-aead-6d333b150e63)
 
+## Advanced Features
+
+### Event Handlers
+The following event handlers were implemented:
+1. **Button Click Handler**: Detects which button (red or blue) the player selects and processes their guess.
+2. **Map Interaction Handler**: Adjusts the visual placement of lines when the map is resized or scrolled.
+3. **Game Reset Handler**: Triggers a game reset after three incorrect guesses, refreshing the counters and lines.
+
+### Use of Closures 
+Closures were utilized to maintain private states for:
+- The **correct/incorrect counters**, ensuring they are only modified through specific functions.
+- The **game's end condition**, keeping track of the incorrect guesses without exposing the logic directly to global variables.
+
+### Interaction with the DOM 
+The game heavily interacts with the DOM by:
+- Dynamically generating lines on the map and updating them based on player input.
+- Displaying real-time feedback and updating counters for correct and incorrect answers.
+- Adjusting the layout and visibility of elements (e.g., end-of-game messages) using DOM manipulation techniques.
+
+### AI Assistance 
+AI (ChatGPT) was used to:
+- Refine the game mechanics and provide efficient CSS solutions for layout and responsiveness.
+- Troubleshoot Leaflet.js implementation and identify optimal event handlers.
+- Draft documentation for this game, including Readme content and grading criteria explanations. [Link to interaction](https://openai.com).
 
 ---
 
