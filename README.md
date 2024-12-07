@@ -34,11 +34,10 @@ This visual demonstrates the core concept of the game: the stick that looks long
 
 ---
 
-### 2. **Incorrect Answer Feedback**
-When a player guesses incorrectly, the game provides feedback showing the correct answer and the actual lengths of both lines.
-
+### 2. **Correct/Incorrect Answer Feedback**
+When a player guesses incorrectly or correctly, the game provides feedback by displaying the correct answer and the actual lengths of both lines.
+ 
  ![Screenshot_5](https://github.com/user-attachments/assets/c28917ba-fad1-499a-8e59-be314c415d86)
-
 
 ---
 
@@ -61,10 +60,10 @@ Closures were utilized to maintain private states for:
 - The **game's end condition**, keeping track of the incorrect guesses without exposing the logic directly to global variables.
 
 ### Interaction with the DOM 
-The game heavily interacts with the DOM by:
+The game interacts with the DOM by:
 - Dynamically generating lines on the map and updating them based on player input.
 - Displaying real-time feedback and updating counters for correct and incorrect answers.
-- Adjusting the layout and visibility of elements (e.g., end-of-game messages) using DOM manipulation techniques.
+- Adjusting the layout and visibility of elements (end-of-game messages) using DOM manipulation techniques.
 
 ---
 
