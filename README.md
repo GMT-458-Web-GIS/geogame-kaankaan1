@@ -66,12 +66,6 @@ The game heavily interacts with the DOM by:
 - Displaying real-time feedback and updating counters for correct and incorrect answers.
 - Adjusting the layout and visibility of elements (e.g., end-of-game messages) using DOM manipulation techniques.
 
-### AI Assistance 
-AI (ChatGPT) was used to:
-- Refine the game mechanics and provide efficient CSS solutions for layout and responsiveness.
-- Troubleshoot Leaflet.js implementation and identify optimal event handlers.
-- Draft documentation for this game, including Readme content and grading criteria explanations. [Link to interaction](https://openai.com).
-
 ---
 
 ## Requirements
