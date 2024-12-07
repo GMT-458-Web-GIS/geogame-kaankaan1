@@ -1,5 +1,5 @@
-My Game: [https://gmt-458-web-gis.github.io/geogame-kaankaan1/](https://gmt-458-web-gis.github.io/geogame-kaankaan1/about.html), Have Fun!
-(There will be corrections and changes on the game and about page.)
+My Game: , Have Fun!
+ 
 
 
 # Geo-Game Design
