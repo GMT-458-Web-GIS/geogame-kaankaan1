@@ -62,8 +62,29 @@ Closures were utilized to maintain private states for:
 ### Interaction with the DOM 
 The game interacts with the DOM by:
 - Dynamically generating lines on the map and updating them based on player input.
+  <img width="427" alt="Screenshot_12" src="https://github.com/user-attachments/assets/95790af9-d771-4d8d-bce4-ba29d59a0721">
+
 - Displaying real-time feedback and updating counters for correct and incorrect answers.
+  <img width="712" alt="Screenshot_14" src="https://github.com/user-attachments/assets/e4c57ca9-6a8a-40c0-9fb0-0935ee172f9d">
+
 - Adjusting the layout and visibility of elements (end-of-game messages) using DOM manipulation techniques.
+- Hiding Guess Options and Showing Result: After the player guesses, the game hides the guess options and shows the result:
+
+<img width="377" alt="Screenshot_15" src="https://github.com/user-attachments/assets/d3d0ecc1-579d-4a21-9985-f2afbbdcc3f2">
+
+-Showing End-of-Game Message: If the player reaches 3 wrong answers, a game-over message is displayed using an alert. After the alert, the game is reset and the counters are updated.
+
+<img width="454" alt="Screenshot_12" src="https://github.com/user-attachments/assets/25670ef3-58cb-43f1-9b64-eead0f3f28b3">
+
+-Flash Effect: After each guess, a CSS class (flash-correct or flash-incorrect) is added to the result element to give visual feedback (e.g., changing color or animation):
+
+<img width="341" alt="Screenshot_14" src="https://github.com/user-attachments/assets/7006b254-e40b-4f5d-bbe9-c57a58ca590e">
+
+-Auto-refresh Game: After a delay, the game automatically refreshes by removing the flash classes and initializing a new game:
+
+<img width="517" alt="Screenshot_12" src="https://github.com/user-attachments/assets/c104db2a-9135-4692-a09e-a3c3d2234de8">
+
+
 
 ---
 
