@@ -111,6 +111,14 @@ This game uses **Leaflet.js**, an open-source JavaScript library for interactive
 
 ---
 
+## Ai Support Section (chatgpt) 
+
+During the development of this game, I extensively utilized AI, particularly ChatGPT, to assist with various aspects of the process. This includes generating ideas, solving specific problems, and optimizing the code. Below is an example where I sought help from ChatGPT to resolve an issue:
+
+https://chatgpt.com/share/67575591-7ea4-800f-b34c-ebc86cd2e981
+
+---
+
 ## Educational Value
 
 This game is an engaging way to explore geographical distortions caused by map projections. By visually comparing line lengths, players develop an intuitive understanding of how Earth's curvature impacts distance representation.
